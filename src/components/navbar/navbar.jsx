@@ -1,47 +1,22 @@
 "use client";
 import React, { useState } from "react";
 import styles from "./navbar.module.css";
-import { scrollToElement } from "../common/helperFunctions";
+import { Navlink } from "./Link";
 
 export const Navbar = () => {
-  const [active, setActive] = useState("home");
   return (
     <div className={styles.NavbarContainer}>
-      <div
-        className={active === "home" ? styles.active : ""}
-        onClick={() => {
-          scrollToElement("home");
-          setActive("home");
-        }}
-      >
-        Home
+      <div>
+        <Navlink to="home">Home</Navlink>
       </div>
-      <div
-        className={active === "about" ? styles.active : ""}
-        onClick={() => {
-          scrollToElement("about");
-          setActive("about");
-        }}
-      >
-        About
+      <div>
+        <Navlink to="about">About</Navlink>
       </div>
-      <div
-        className={active === "projects" ? styles.active : ""}
-        onClick={() => {
-          scrollToElement("projects");
-          setActive("projects");
-        }}
-      >
-        Projects
+      <div>
+        <Navlink to="projects">Projects</Navlink>
       </div>
-      <div
-        className={active === "contact_me" ? styles.active : ""}
-        onClick={() => {
-          scrollToElement("contact_me");
-          setActive("contact_me");
-        }}
-      >
-        Contact Me
+      <div>
+        <Navlink to="contact_me">Contact Me</Navlink>
       </div>
     </div>
   );
