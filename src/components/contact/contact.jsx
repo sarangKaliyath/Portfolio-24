@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./contact.module.css";
-import { GoToLink } from "../common/goToLink";
 
 export const Contact = () => {
   return (
@@ -46,9 +45,9 @@ export const Contact = () => {
           <img
             src="./github_light.svg"
             alt=""
-            // onClick={() => {
-            //   gotoLink("https://github.com/sarangKaliyath");
-            // }}
+            onClick={() => {
+              window.open("https://github.com/sarangKaliyath");
+            }}
           />
           <div>github/sarangKaliyath</div>
         </div>
@@ -56,11 +55,11 @@ export const Contact = () => {
           <img
             src="./linkedin.svg"
             alt=""
-            // onClick={() => {
-            //   gotoLink(
-            //     "https://www.linkedin.com/in/sarang-kaliyath-84034a122/"
-            //   );
-            // }}
+            onClick={() => {
+              window.open(
+                "https://www.linkedin.com/in/sarang-kaliyath-84034a122/"
+              );
+            }}
           />
           <div>linkedIn/sarang-kaliyath</div>
         </div>
@@ -68,9 +67,9 @@ export const Contact = () => {
           <img
             src="./twitter.svg"
             alt=""
-            // onClick={() => {
-            //   gotoLink("https://twitter.com/KaliyathSarang");
-            // }}
+            onClick={() => {
+              window.open("https://twitter.com/KaliyathSarang");
+            }}
           />
           <div>twitter/KaliyathSarang</div>
         </div>

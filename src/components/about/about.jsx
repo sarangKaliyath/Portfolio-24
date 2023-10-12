@@ -50,7 +50,7 @@ export const About = () => {
         <div className={styles.cv_button}>
           <GoToLink
             link={
-              "https://drive.google.com/file/d/1YKS59kWMdS8bp_ltSzQEtY7WMc75LP0P/view?usp=sharing"
+              "https://drive.google.com/file/d/1WZBJFVtnRJ8_TbO9tVoZzr3sCeXbczY7/view?usp=sharing"
             }
           >
             <button className={styles.button}>DOWNLOAD RESUME</button>
